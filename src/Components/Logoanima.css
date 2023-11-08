@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+body{
+    margin-top: 20vh;
+    position: absolute;
+    z-index: 0;
+}
+.anima_line{
+    display: flex;
+    list-style: none;
+    max-width: 100%;
+margin-top: 0;
+}
+
+.anima_line li{
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    font-family: 'Kanit';
+    font-size: xx-large;
+    user-select: none;
+    text-shadow: 1px 1px 1px #ff9bc3;
+}
+
+.bicucler{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    filter: invert(1);
+    animation: slideIn 1s ease-in-out;
+    z-index: 0;
+   
+}
+.bicucler img{
+    max-width: 100%;
+    position:relative;
+    filter: drop-shadow(15px 15px 15px #4f765c);
+    transform: rotate(10deg);
+    z-index: 0;
+    left:80%;
+}
+
+.bicucler2{
+    width: 60%;
+    position: absolute;
+
+    top: 45%;
+    left: -150px;
+}
+.bicucler2 img{
+    width: 150%;
+    filter: drop-shadow(15px 15px 15px #00000049);
+    transform: rotate(10deg);
+    z-index: 0;
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
